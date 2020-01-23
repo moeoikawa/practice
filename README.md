@@ -46,4 +46,16 @@ negotiation_id = aaa.get().id
 select * from aaa は、aaaテーブルの行を全て取ってくる
 where は、列を指定できる
 
+▼Django + HTML
+以下のように views で request を返す（requestはDjangoの機能）と HTML側で user.XXX と指定すると model で書いたユーザー情報が取ってこれる
+return render(request, 'mypage/needs/index.html', context)
 
+!important はHTML の機能で、ベタ書きした style の方を優先して反映させる
+（以下の場合だと、CSSのクラスで指定したbackground-colorではなく、ベタ書きした方が優先になる）
+
+<!-- TODO: デザイン未済 --> ←VMエディタの機能（TODO）
+  {% if user.member_type == ”DIRECT” %}
+    <div class="l-header__top__inner; background-color: #E6B422 !important;">
+  {% else %}
+    <div class="l-header__top__inner">
+  {% endif %}
