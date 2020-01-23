@@ -14,3 +14,10 @@ for i, row in enumerate(need_list):
 ▼ブーリアン型（true, false）場合、if文は以下のように書くべき
 
 if not show_to_broker:      ← if show_to_broker == false と同じこと
+
+
+▼pythonスライス
+
+▼pythonライブラリ
+
+▼python（for enumerate）
