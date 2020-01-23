@@ -15,13 +15,13 @@ for i, row in enumerate(need_list):
 if not show_to_broker:      ← if show_to_broker == false と同じこと
 
 
-▼pythonスライス
+▼python スライス
 
-▼pythonライブラリ
+▼python ライブラリ
 
-▼python（for enumerate）
+▼python （for enumerate）
 
-▼Django(for ... empty)
+▼Django (for ... empty)
 for タグのオプションとして {% empty %} 節を使うことがでる。これはループさせようとした配列が空、または存在しなかった場合に表示する文字列を指定する
 
 ▼Docker
@@ -32,3 +32,18 @@ docker-compose up (docker-compose up -d)
 
 -d を付けるとログが省略される
 エラーとかを見たい場合は -d を取るといい
+
+▼python 三項演算子
+
+▼Django (objects.filter, objects.get)
+filter はカラムを取ってくるのではなく、指定した値を取ってくる
+
+↓property_id から id を取得
+aaa =  Negotiation.objects.filter(property_id = property_id)
+negotiation_id = aaa.get().id
+
+▼SQL
+select * from aaa は、aaaテーブルの行を全て取ってくる
+where は、列を指定できる
+
+
