@@ -12,7 +12,6 @@ for i, row in enumerate(need_list):
     
     
 ▼ブーリアン型（true, false）場合、if文は以下のように書くべき
-
 if not show_to_broker:      ← if show_to_broker == false と同じこと
 
 
@@ -21,3 +20,6 @@ if not show_to_broker:      ← if show_to_broker == false と同じこと
 ▼pythonライブラリ
 
 ▼python（for enumerate）
+
+▼Django(for ... empty)
+for タグのオプションとして {% empty %} 節を使うことがでる。これはループさせようとした配列が空、または存在しなかった場合に表示する文字列を指定する
