@@ -10,19 +10,51 @@ need_list = [aaa, bbb, ccc]
 for i, row in enumerate(need_list):
     need_list.pop(i)　← そのindex番号が i の row をリストから削除
     
-    
+
+
 ▼ブーリアン型（true, false）場合、if文は以下のように書くべき
 if not show_to_broker:      ← if show_to_broker == false と同じこと
 
 
+
 ▼python スライス
+
+インデックス1〜3の要素を取得
+
+a = [1,2,3,4,5,6,7,8,9]
+
+a[1:4]
+
+結果
+[2, 3, 4]
+
+※ 終端は インデックス + 1の値となる
+
+
 
 ▼python ライブラリ
 
+context = {
+        'asset_list' : asset_list,
+        'area_list' : area_list,
+        'prefecture_list' : prefecture_list,
+        'municipality_list' : municipality_list,
+        'price_list' : price_list,
+        'price_list_to': price_list_to,
+        'yield_list' : yield_list,
+        'yield_list_to' : yield_list_to
+        }
+
+
+
 ▼python （for enumerate）
+
+
 
 ▼Django (for ... empty)
 for タグのオプションとして {% empty %} 節を使うことがでる。これはループさせようとした配列が空、または存在しなかった場合に表示する文字列を指定する
+
+
 
 ▼Docker
 
@@ -33,7 +65,11 @@ docker-compose up (docker-compose up -d)
 -d を付けるとログが省略される
 エラーとかを見たい場合は -d を取るといい
 
+
+
 ▼python 三項演算子
+
+
 
 ▼Django (objects.filter, objects.get)
 filter はカラムを取ってくるのではなく、指定した値を取ってくる
@@ -42,9 +78,13 @@ filter はカラムを取ってくるのではなく、指定した値を取っ�
 aaa =  Negotiation.objects.filter(property_id = property_id)
 negotiation_id = aaa.get().id
 
+
+
 ▼SQL
 select * from aaa は、aaaテーブルの行を全て取ってくる
 where は、列を指定できる
+
+
 
 ▼Django + HTML
 以下のように views で request を返す（requestはDjangoの機能）と HTML側で user.XXX と指定すると model で書いたユーザー情報が取ってこれる
