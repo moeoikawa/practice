@@ -23,3 +23,12 @@ if not show_to_broker:      ← if show_to_broker == false と同じこと
 
 ▼Django(for ... empty)
 for タグのオプションとして {% empty %} 節を使うことがでる。これはループさせようとした配列が空、または存在しなかった場合に表示する文字列を指定する
+
+▼Docker
+
+docker-compose stop
+docker-compose build
+docker-compose up (docker-compose up -d)
+
+-d を付けるとログが省略される
+エラーとかを見たい場合は -d を取るといい
