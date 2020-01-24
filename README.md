@@ -99,3 +99,15 @@ return render(request, 'mypage/needs/index.html', context)
   {% else %}
     <div class="l-header__top__inner">
   {% endif %}
+
+
+
+▼returnについて
+return先がどこであるかきちんと調べる（その関数の呼び元）
+Djangoの場合、以下のように呼び出している
+パターン①　HTML-js-urls.py-views.py 
+return render(request, 'np/index.html', context)
+
+パターン②　HTML-urls.py-views.py
+return JsonResponse(__create_negotiation_detail(request, id))
+
