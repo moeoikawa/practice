@@ -111,3 +111,7 @@ return render(request, 'np/index.html', context)
 パターン②　HTML-urls.py-views.py
 return JsonResponse(__create_negotiation_detail(request, id))
 
+
+
+
+
