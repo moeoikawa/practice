@@ -113,5 +113,10 @@ return JsonResponse(__create_negotiation_detail(request, id))
 
 
 
+▼Django list + Library
+message_history_list = []
+
+for obj in MessageHistory.objects.all().reverse():
+    message_history_list.append({"negotiation_id" : obj.negotiation_id, "body" : obj.body, "created_at" : obj.created_at})
 
 
