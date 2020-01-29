@@ -120,3 +120,5 @@ for obj in MessageHistory.objects.all().reverse():
     message_history_list.append({"negotiation_id" : obj.negotiation_id, "body" : obj.body, "created_at" : obj.created_at})
 
 
+
+
