@@ -120,5 +120,8 @@ for obj in MessageHistory.objects.all().reverse():
     message_history_list.append({"negotiation_id" : obj.negotiation_id, "body" : obj.body, "created_at" : obj.created_at})
 
 
+▼HTML forで指定すると「はい」の部分をクリックしたときにでもチェックボックスにチェックが入る
+<input type="checkbox" id="brokercheck" value="1">
+<label for="brokercheck"><span>はい</span></label>
 
 
